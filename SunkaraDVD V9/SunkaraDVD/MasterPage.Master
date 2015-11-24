@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="SunkaraDVD.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel ="stylesheet" type ="text/css" href ="styleSheet1.css"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+           
+
+        <h1>Meera's Super DVD Store</h1>
+      <div>
+        <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+      EnableViewState="False" IncludeStyleBlock="False" 
+      StaticSubMenuIndent="16px">
+             <StaticItemTemplate>
+         <img src="../Images/DVDimage.jpeg" alt="+" width="22" height="22" style="border-width: 0;" />
+         <%# Eval("Text") %>
+      </StaticItemTemplate>
+      <Items>
+         <asp:MenuItem NavigateUrl="~/default.aspx" Text="Home"/>
+         <asp:MenuItem NavigateUrl="~/Details.aspx" Text="Details"/>
+         <asp:MenuItem NavigateUrl="~/Admin/AddDVD.aspx" Text="Add DVD"/>
+         <asp:MenuItem NavigateUrl="~/Admin/EditDVD.aspx" Text="Edit DVD"/>
+      </Items>
+</asp:Menu>
+          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+     
+        </asp:ContentPlaceHolder>
+     
+        <p id="copy">Copyright 2015 Meera Sunkara Enterprises</p>
+    </div>
+    </form>
+</body>
+</html>

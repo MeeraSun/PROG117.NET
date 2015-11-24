@@ -1,0 +1,51 @@
+﻿body 
+{
+    background-color: yellowgreen;
+    background-image: url(Images/my-background.jpg);
+}
+
+h1 {
+    font-size: 35px;
+    font: Arial;
+    color: darkgreen;
+}
+
+h2 {
+  color: blanchedalmond;
+}
+
+h3 {
+  font-size: 15px;
+  font: Tahoma;
+    color: palevioletred;
+}
+
+.myLinks {  
+  text-decoration: none;
+  color: Blue;
+}
+
+#copy {
+    font-size: 10px;
+}
+
+ .div-child {
+ position:absolute;
+ top:0;
+ right:0;
+ width:400px;
+}
+
+ 
+
+ 
+
+ .widelabel {
+  display:inline-block;
+  width: 100px;
+  }
+
+
+
+
+
